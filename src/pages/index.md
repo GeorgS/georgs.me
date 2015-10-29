@@ -6,17 +6,6 @@ html {
   font-size: 112.5%;
   line-height: 1.58333em;
   overflow-y: scroll;
-  -webkit-transition: all 500ms cubic-bezier(0.555, 0, 0.650, 1.000); /* older webkit */
--webkit-transition: all 500ms cubic-bezier(0.555, -0.600, 0.650, 1.000);
- -moz-transition: all 500ms cubic-bezier(0.555, -0.600, 0.650, 1.000);
-   -o-transition: all 500ms cubic-bezier(0.555, -0.600, 0.650, 1.000);
-      transition: all 500ms cubic-bezier(0.555, -0.600, 0.650, 1.000); /* custom */
-
--webkit-transition-timing-function: cubic-bezier(0.555, 0, 0.650, 1.000); /* older webkit */
--webkit-transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000);
- -moz-transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000);
-   -o-transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000);
-      transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000); /* custom */
 }
 
 *, *:before, *:after {
@@ -207,6 +196,9 @@ a:hover {
   opacity: 0;
   -webkit-transition: all .4s; /* Safari */
   transition: all .4s;
+  -webkit-transition-timing-function: cubic-bezier(0.555, 0, 0.650, 1.000); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000);
+  transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000); /* custom */
   margin-top: 1em;
 }
 
@@ -231,6 +223,9 @@ a:hover {
   margin: .5em;
   -webkit-transition: padding .4s; /* Safari */
   transition: padding .4s;
+  -webkit-transition-timing-function: cubic-bezier(0.555, 0, 0.650, 1.000); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000);
+  transition-timing-function: cubic-bezier(0.555, -0.600, 0.650, 1.000); /* custom */
 }
 
 .social-icons path {
