@@ -270,6 +270,10 @@ a:hover {
     padding: .5em;
     margin: 1em;
   }
+
+  .speech-bubble {
+    display: none;
+  }
 }
 </style>
 
