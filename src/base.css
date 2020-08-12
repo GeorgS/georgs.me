@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+} 
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(255, 255, 255, .3);
+    transition: all ease-in-out .25s;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, .5);
+}
+
+.slant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100vh;
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 33% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 33% 100%, 0 100%);
+}
+
+.me-img {
+    position: absolute;
+    width: 28%;
+    height: 100%;
+    background-image: url(/me.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    /*filter: drop-shadow(30px 10px 4px #4444dd);*/
+}
+
+.content-container {
+    position: absolute;
+    top: 0; 
+    left: 16.5%;
+    width: 83.5%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text {
+    opacity: 0;
+}
+
+.content-text h1 {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.content-text h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+.social-container {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    flex-direction: row;
+    fill: #fff;
+}
+
+.social-icon {
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.social-icon:hover {
+    background: #fff;
+    fill: #000;
+}

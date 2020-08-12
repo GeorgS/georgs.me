@@ -1,0 +1,21 @@
+{
+  "name": "georgs.me",
+  "version": "1.0.0",
+  "description": "georg.me personal website",
+  "repository": "https://github.com/GeorgS/georgs.github.io.git",
+  "author": "<georg.schelkshorn@touchlay.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"georgs.me\" >> out/CNAME && gh-pages -d out -t true"
+  },
+  "dependencies": {
+    "next": "^9.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-spring": "^8.0.27"
+  }
+}
