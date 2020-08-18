@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
           {/* Stylesheets */}
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300&display=swap"
           />
         </Head>
         <body>
