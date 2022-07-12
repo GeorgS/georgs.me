@@ -9,9 +9,9 @@ export default function MainPage() {
     const isMobile = useMediaQuery('only screen and (max-width: 425px)') // 70%
 
     const socialIcons = [
+        <SocialIcon icon='github' href='http://github.com/georgs' />,
         <SocialIcon icon='linkedin' href='https://www.linkedin.com/in/georg-schelkshorn-632655ba/' />,
-        <SocialIcon icon='xing' href='https://www.xing.com/profile/Georg_Schelkshorn' />,
-        <SocialIcon icon='facebook' href='http://facebook.com/georg.schelkshorn' />
+        <SocialIcon icon='xing' href='https://www.xing.com/profile/Georg_Schelkshorn' />
     ]
 
     let multiplier = 0.28 // desktop
@@ -41,7 +41,7 @@ export default function MainPage() {
                     <h2>Entrepreneur, Developer<br />
                         and Design Enthusiast
                         <br /><br />
-                        Working <a href="https://tly.at">@TouchLay</a>
+                        Co-Founder <a href="https://tly.at">@TouchLay</a>
                     </h2>
                 </animated.div>
             </div>
